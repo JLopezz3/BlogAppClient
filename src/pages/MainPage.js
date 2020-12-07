@@ -15,13 +15,7 @@ export default function MainPage() {
     );
   }, []);
 
-  const likePost = (id) => {
-    Axios.post(`https://blog-posting-app.herokuapp.com/api/like/${id}`).then(
-      (response) => {
-        alert("you liked a post");
-      }
-    );
-  };
+
 
   return (
     <div className="MainPage">
@@ -45,13 +39,6 @@ export default function MainPage() {
                     : val.post_text}
                 </p>
 
-                <button
-                  onClick={() => {
-                    likePost(val.id);
-                  }}
-                >
-                  Like
-                </button>
                 <div className="bottom">
                   <h4> {val.user_name} </h4>
                   <h4> {val.likes}</h4>
