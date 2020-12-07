@@ -16,7 +16,7 @@ export default function MainPage() {
   }, []);
 
   const likePost = (id) => {
-    Axios.post(`https://mysql-deploy-heroku.herokuapp.com/api/like/${id}`).then(
+    Axios.post(`https://blog-posting-app.herokuapp.com/api/like/${id}`).then(
       (response) => {
         alert("you liked a post");
       }
