@@ -20,7 +20,7 @@ export default function MainPage() {
   return (
     <div className="MainPage">
       <div className="PostContainer">
-        {postList == [] ? (
+        {postList === [] ? (
           <h1>Loading...</h1>
         ) : (
           postList.map((val, key) => {
